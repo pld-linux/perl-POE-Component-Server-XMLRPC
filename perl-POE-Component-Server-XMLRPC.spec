@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	POE
-%define	pnam	Component-Server-XMLRPC
+%define		pdir	POE
+%define		pnam	Component-Server-XMLRPC
 Summary:	POE::Component::Server::XMLRPC - publish POE event handlers via XMLRPC over HTTP
 Summary(pl):	POE::Component::Server::XMLRPC - procedury obs³ugi POE przez XMLRPC po HTTP
 Name:		perl-POE-Component-Server-XMLRPC
