@@ -6,12 +6,12 @@
 %define	pdir	POE
 %define	pnam	Component-Server-XMLRPC
 Summary:	POE::Component::Server::XMLRPC - publish POE event handlers via XMLRPC over HTTP
-#Summary(pl):	
+Summary(pl):	POE::Component::Server::XMLRPC - procedury obs³ugi POE przez XMLRPC po HTTP
 Name:		perl-POE-Component-Server-XMLRPC
 Version:	0.05
 Release:	1
 # same as perl
-License:	GPL/Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	263fd98df07331d64be5beb75b07835a
@@ -26,12 +26,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-POE::Component::Server::XMLRPC adds asynchronous, event driven
-XMLRPC over HTTP to your POE applications.  It works very well
-with synchronous XMLRPC::Lite clients, even.
+POE::Component::Server::XMLRPC adds asynchronous, event driven XMLRPC
+over HTTP to your POE applications. It works very well with
+synchronous XMLRPC::Lite clients, even.
 
-# %description -l pl
-# TODO
+%description -l pl
+POE::Component::Server::XMLRPC dodaje asynchroniczne, sterowane
+zdarzeniami XMLRPC po HTTP do aplikacji POE. Dzia³a bardzo dobrze
+nawet z synchronicznymi klientami XMLRPC::Lite.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
