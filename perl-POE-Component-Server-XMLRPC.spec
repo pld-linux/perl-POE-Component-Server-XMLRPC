@@ -9,7 +9,7 @@ Summary:	POE::Component::Server::XMLRPC - publish POE event handlers via XMLRPC 
 Summary(pl):	POE::Component::Server::XMLRPC - procedury obs³ugi POE przez XMLRPC po HTTP
 Name:		perl-POE-Component-Server-XMLRPC
 Version:	0.05
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -18,9 +18,9 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(XMLRPC::Lite) >= 0.28
 BuildRequires:	perl-POE >= 0.22
 BuildRequires:	perl-POE-Component-Server-HTTP >= 0.02
+BuildRequires:	perl-SOAP-Lite >= 0.28
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
