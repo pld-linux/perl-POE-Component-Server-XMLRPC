@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	POE
 %define		pnam	Component-Server-XMLRPC
+%include	/usr/lib/rpm/macros.perl
 Summary:	POE::Component::Server::XMLRPC - publish POE event handlers via XMLRPC over HTTP
 Summary(pl.UTF-8):	POE::Component::Server::XMLRPC - procedury obsługi POE przez XMLRPC po HTTP
 Name:		perl-POE-Component-Server-XMLRPC
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	263fd98df07331d64be5beb75b07835a
+URL:		http://search.cpan.org/dist/POE-Component-Server-XMLRPC/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
