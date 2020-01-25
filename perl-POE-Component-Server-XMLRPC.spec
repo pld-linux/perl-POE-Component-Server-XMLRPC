@@ -4,7 +4,6 @@
 
 %define		pdir	POE
 %define		pnam	Component-Server-XMLRPC
-%include	/usr/lib/rpm/macros.perl
 Summary:	POE::Component::Server::XMLRPC - publish POE event handlers via XMLRPC over HTTP
 Summary(pl.UTF-8):	POE::Component::Server::XMLRPC - procedury obsługi POE przez XMLRPC po HTTP
 Name:		perl-POE-Component-Server-XMLRPC
